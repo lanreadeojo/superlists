@@ -14,7 +14,7 @@ class NewVistorTest(unittest.TestCase):
         #Lanre has heard about a cool new online to-do app.
         #She goes to check out its homepage
         #she notices the page title and header mention to-do lists
-        self.browser.get('http://127.0.0.1:8000/')
+        self.browser.get('http://localhost:8000/')
         self.assertIn('To-Do', self.browser.title)
         header_text = self.browser.find_element(By.TAG_NAME,'h1').text
         self.assertIn('To-Do',header_text)
